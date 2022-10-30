@@ -1,0 +1,25 @@
+<%- include("partials/header") %> 
+<div class="main">
+    <div class="top">
+        <h2 class="login--title input--title">Login</h2>
+        <img class="symbol" src="../images/symbol.png"></img>
+    </div>
+    
+    <form method="POST" action ="/log-in">
+        <div class="log-in sign">
+            <label>Username</label>
+            <input type="text" name="username" />
+        </div>
+        <div class="log-in sign">
+            <label>Password</label>
+            <input type="text" name="password"/>
+        </div>
+        <div>
+            <button class="login-btn input-btn" type="submit">Login</button>
+        </div>
+    </form>
+    </div>
+
+
+
+<%- include("partials/footer") %> 

@@ -1,0 +1,31 @@
+<%- include("partials/header") %> 
+<%- include("partials/error") %>
+
+
+
+<% if (!user.member) { %>
+    <div class="memberContainer">
+        <h2>Become a Member</h2>
+        <form method="POST" action ="/member">
+            <div class="member">
+                <label>Enter the Member Passcode:</label>
+                <input type="text" name="passcode" required="true"  />
+            </div>
+            <div>
+                <button class="input-btn" type="submit">Submit Passcode</button>
+            </div>
+        </form>
+    </div>
+  
+
+<% } else { %>
+    <div class="member-container">
+        <h2 class="member-h2">
+            Congratulations! You are now a Member of the Club   
+        </h2>
+        <img class="member-img" src="../images/member.jpg"alt="member">
+        </img>
+    </div>
+<% } %>
+
+<%- include("partials/footer") %> 

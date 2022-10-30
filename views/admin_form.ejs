@@ -1,0 +1,33 @@
+<%- include("partials/header") %> 
+<%- include("partials/error") %>
+
+
+
+<% if (!user.admin) { %>
+    <div class="adminContainer">
+        <h2>Become an Admin</h2>
+        <form method="POST" action ="/admin">
+            <div class="admin">
+                <label>Enter the Admin Passcode:</label>
+                <input type="text" name="passcode" required="true"  />
+            </div>
+            <div>
+                <button class="input-btn" type="submit">Submit Passcode</button>
+            </div>
+        </form>
+    
+    </div>
+   
+<% } else { %>
+    <div class="admin-container">
+        <h2 class="admin-h2">
+            Congratulations! You are now an Admin  
+        </h2>
+        <img class="admin-img" src="../images/admin.jpg"alt="member">
+        </img>
+    </div>
+<% } %>
+
+
+
+<%- include("partials/footer") %> 

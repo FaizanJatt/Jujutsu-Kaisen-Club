@@ -1,0 +1,254 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: radial-gradient(50% 140.82% at 50% 50%, #333b3f 0%, #587596 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.head {
+  display: flex;
+  background-color: #282424;
+  color: white;
+  font-family: "Inter";
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+}
+li {
+  text-decoration: none;
+  padding: 15px;
+}
+li:hover {
+  background-color: #a92d2d;
+}
+
+.title:hover {
+  color: #a92d2d;
+}
+.title {
+  transition: 400ms;
+  text-align: center;
+}
+* {
+  font-family: "Inter";
+}
+
+.welcome {
+  font-size: 20px;
+}
+
+.welcomeUser {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.member-h2,
+.admin-h2 {
+  color: red;
+
+  text-shadow: 2px 2px #4f305f;
+}
+
+.member-img,
+.admin-img {
+  max-width: 100%;
+}
+.member-container,
+.admin-container {
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.message-cont {
+  background-color: white;
+  padding: 20px;
+  min-height: 180px;
+  width: 100%;
+}
+.messages-cont {
+  height: auto;
+  background-color: beige;
+}
+
+.head {
+  width: 100%;
+  transition: 1s;
+  margin-bottom: 2em;
+}
+
+.main,
+.memberContainer,
+.adminContainer {
+  width: 50%;
+  padding: 1.5em 4em;
+  flex-direction: column;
+  margin: 0 auto 2em auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 3px 3px azure;
+  color: black;
+  height: 40vh;
+}
+.main2 {
+  width: 50%;
+  padding: 1.5em 4em;
+  flex-direction: column;
+  margin: 0 auto 2em auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 3px 3px azure;
+  color: black;
+  height: 50vh;
+}
+.memberContainer,
+.adminContainer {
+  height: 30vh;
+}
+
+.input--title {
+  color: black;
+  font-weight: bold;
+}
+input {
+  height: 30px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #d1c4e9;
+}
+
+.sign,
+.create-message,
+.member,
+.admin {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.input-btn {
+  background-color: red;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+  height: 40px;
+  width: 70px;
+  color: black;
+}
+label {
+  font-weight: bold;
+  color: black;
+}
+
+.symbol {
+  width: 150px;
+  height: 80px;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 2000px) {
+  .main {
+    width: 30%;
+  }
+  .main2 {
+    width: 30%;
+  }
+  .memberContainer,
+  .adminContainer {
+    width: 35%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .main {
+    width: 40%;
+  }
+  .main2 {
+    width: 40%;
+  }
+  .memberContainer,
+  .adminContainer {
+    width: 35%;
+  }
+}
+@media (max-width: 900px) {
+  .main {
+    width: 40%;
+  }
+  .main2 {
+    width: 40%;
+  }
+  .memberContainer,
+  .adminContainer {
+    height: 35vh;
+  }
+  .memberContainer,
+  .adminContainer {
+    width: 40%;
+  }
+}
+
+@media (max-width: 650px) {
+  .head {
+    flex-direction: column;
+  }
+  .title {
+    padding: 10px;
+  }
+  .main {
+    width: 82%;
+  }
+  .main2 {
+    width: 82%;
+  }
+  .memberContainer,
+  .adminContainer {
+    width: 82%;
+  }
+}
+@media (max-width: 400px) {
+  .head > * {
+    flex-direction: column;
+  }
+  .title {
+    padding: 20px;
+    font-size: 15px;
+  }
+  li {
+    font-size: 12px;
+  }
+}

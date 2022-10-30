@@ -1,0 +1,23 @@
+
+    <%- include("partials/header.ejs") %>
+
+    <div class="messages-cont">
+      <% if (locals.messages) { %>
+        <% messages.forEach(message=>{%>
+          <div class="message-cont">
+            <%= message.title %> 
+            <%= message.text %>
+          </div>
+        <% }) %>
+        
+      <% } %>
+    </div>
+ 
+    
+ 
+      
+
+
+
+
+    <%- include("partials/footer.ejs") %> 

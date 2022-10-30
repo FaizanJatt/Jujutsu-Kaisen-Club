@@ -1,0 +1,29 @@
+<%- include("partials/header") %> 
+<%- include("partials/error") %>
+<div class="main2">
+    <div class="top">
+        <h2 class="signup--title input--title">Sign up</h2>
+        <img class="symbol" src="../images/symbol.png"></img>
+    </div>
+    <form method="POST" action ="/sign-up">
+        <div class="sign-up sign">
+            <label>Username</label>
+            <input type="text" name="username" />
+        </div>
+        <div class="sign-up sign">
+            <label>Password</label>
+            <input type="text" name="password"/>
+        </div>
+        <div class="sign-up sign">
+            <label>Confirm Password</label>
+            <input type="text" name="confirmPassword"/>
+        </div>
+        <div>
+            <button class="signup-btn input-btn" type="submit">Register</button>
+        </div>
+    </form>
+    
+</div>
+
+
+<%- include("partials/footer") %> 

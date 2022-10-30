@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jujutsu Kaisen</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;401&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="head">
+        <a href="/"><h3 class="title">Jujutsu Kaisen Club</h3></a>
+        <% if (locals.user != null) { %>
+            <ul>
+                <a href="/create-message"><li>
+                    Create Message
+                </li></a>
+                <a href="/member"><li>
+                    Member
+                </li></a>
+                <a href="/admin"><li>
+                    Admin
+                </li></a>
+                <a href="/log-out"><li>
+                    Logout
+                </li></a>
+            </ul>
+            <% } else { %>
+                <ul>
+                    <a href="/log-in"><li>
+                        Log in
+                    </li></a>
+                    <a href="/sign-up"><li>
+                        Sign up
+                    </li></a>
+                </ul>
+            <%} %>
+             
+        </div>
+       
+
+    
+

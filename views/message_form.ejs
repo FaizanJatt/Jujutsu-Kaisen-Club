@@ -1,0 +1,22 @@
+<%- include("partials/header") %> 
+<%- include("partials/error") %>
+<div class="main">
+    <h2>Create a Message</h2>
+    <form method="POST" action ="/create-message">
+        <div class="create-message">
+            <label>Title</label>
+            <input type="text" name="messageTitle" required="true" maxlength="50" />
+        </div>
+        <div class="create-message">
+            <label>Message</label>
+            <input type="text" name="messageText" required="true" />
+        </div>
+        <div>
+            <button class="input-btn" type="submit">Submit Message</button>
+        </div>
+    </form>
+</div>
+
+
+
+<%- include("partials/footer") %> 
